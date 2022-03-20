@@ -1,0 +1,26 @@
+/** Custom Properties **/
+:root {
+    --primario: #016f94;
+    --secundario: #7a5dde;
+    --primarioOscuro : #032859;
+    --primarioOscuroart : #11283596;/*rgba(0, 0, 0, 0.5)*/
+    --fuentePrimaria : 'Roboto', sans-serif; 
+    --fuenteSecundaria : 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /*Reset para rems-- 62.5% = 10px*/
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    /*Esto hace que el padding no afecte a las medidas del width, llevarlo siempre*/
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuentePrimaria);
+    font-size: 1.6rem;
+    line-height: 2;
+}
