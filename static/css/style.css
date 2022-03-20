@@ -23,6 +23,8 @@ body {
     font-family: var(--fuentePrimaria);
     font-size: 1.6rem;
     line-height: 1.6;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    min-height: 100%;
 }
 
 /*Globales*/
@@ -41,15 +43,15 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 p, h1, h2, h3, h4{
@@ -79,6 +81,48 @@ ul{
 a{
     color: black;
     text-decoration: none;
+}
+
+/*Botones*/
+
+.boton-ej{
+    display: flex;
+    justify-content: end;
+}
+
+.boton {
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-align: center;
+    display: block;
+    flex: 0 0 100%;
+    border-radius: 27px;
+    width: 155px;
+    border-style: solid;
+}
+
+@media (min-width:768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-morado{
+    color: var(--primario);
+    border-color: var(--primario);
+}
+
+.boton-azul {
+    color: var(--tercero);
+    border-color: var(--tercero);
 }
 
 /*Pagina*/
@@ -131,15 +175,34 @@ a{
 .ejemplo{
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: 1.5fr 0.75fr;
     border-radius: 1rem;
+    background-color: white;
+    border: 1px solid var(--secundario);
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
+}
 
+.ejemplo .ejemplo-imagen{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.ejemplo p{
+    font-size: 1.2rem;
 }
 
 .iconos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 1.6rem;
+    margin: 1.6rem 0 0 0;
+}
+
+.icono{
+    color: var(--terceroClaro);
+}
+.icono p{
+    color: black;
 }
 
 /*Testimonios*/
