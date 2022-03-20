@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href= "{{url_for('static', filename='css/style.css')}}">
+        <link rel="stylesheet" href= "{{url_for('static', filename='css/Normalize.css')}}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="icon" href="logo.jpg" type="image/icon type" />
+        
+    </head>
+    <body>
+      <div class="navbar">
+        <div class="logo">
+          <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="">
+        </div>
+        <div class="nav">
+          <a href="home.html">Home</a>
+          <a href="investigacion.html">Investigacion</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+      <div class="site-header"> 
+        
+      </div>
+      {% block contents %}
+      {% endblock %}
+
+      <div class="contenedor-footer">
+          <footer>
+              <p>Tel: 503 78449035</p>
+              <a href="https://instagram.com/brcevallos ">Instagram</a>
+              <a href="https://www.facebook.com/Cevallos-Bienes-Raices-107432514364803/ ">Facebook</a>
+              <a href="bienesraicescevallos@gmail.com">bienesraicescevallos@gmail.com</a>
+              <p class="copyright">
+              Todos Los Derechos Reservados &copy; Bienes Raices Cevallos 2022
+              </p>
+          </footer> 
+      </div>  
+    </body>
+  
+</html>

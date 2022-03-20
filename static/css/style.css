@@ -1,11 +1,11 @@
 /** Custom Properties **/
 :root {
-    --primario: #016f94;
-    --secundario: #7a5dde;
-    --primarioOscuro : #032859;
-    --primarioOscuroart : #11283596;/*rgba(0, 0, 0, 0.5)*/
-    --fuentePrimaria : 'Roboto', sans-serif; 
-    --fuenteSecundaria : 'Montserrat', sans-serif;
+    --primario: #333366;
+    --secundario: #663399;
+    --secudanrioClaro : #996699;
+    --tercero : #333399;
+    --terceroClaro : #6699CC;
+    --fuentePrimaria : Helvetica;
 }
 
 html {
@@ -22,7 +22,7 @@ html {
 body {
     font-family: var(--fuentePrimaria);
     font-size: 1.6rem;
-    line-height: 2;
+    line-height: 1.6;
 }
 
 /*Globales*/
@@ -35,7 +35,6 @@ img {
     width: 90%;
     margin: 0 auto;
 }
-
 
 h1 {
     font-size: 3.2rem;
@@ -53,7 +52,18 @@ h4 {
     font-size: 2rem;
 }
 
+p, h1, h2, h3, h4{
+    margin: 0;
+}
 
+li{
+    list-style: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
 
 /*Utilidades*/
 
@@ -62,7 +72,12 @@ h4 {
     margin-bottom: 2rem;
 }
 
+.centrado{
+    text-align: center;
+}
+
 a{
+    color: black;
     text-decoration: none;
 }
 
@@ -70,6 +85,69 @@ a{
 
 /*header*/
 .site-header{
-    height: 90vh;
+    height: 85vh;
     /* Para que tome el tamaño de la pantalla del usuario*/
+    background-image: url(../images/hero2.jpg);
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+}
+/*NavBar*/
+.navbar{
+    background-color: white;
+    display: flex;
+    height: 15vh;
+    width: 100%;
+}
+
+.navbar .logo{
+    width: 60%;
+}
+
+.navbar img{
+    height: 90%;
+}
+
+.navbar .nav{
+    display: flex;
+    justify-content: /*alinear contenido horizontalmente*/ space-between;
+    align-items: center;
+    width: 40%;
+    margin-right: 2rem;
+}
+
+.navbar .nav a{
+    color: var(--primario);
+    font-size: 1.8rem;
+}
+
+/*Ejemplos*/
+.ejemplos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 6rem;
+}
+
+.ejemplo{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    border-radius: 1rem;
+
+}
+
+.iconos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1.6rem;
+}
+
+/*Testimonios*/
+
+.testimonios{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 6rem;
+    text-align: justify;
 }
