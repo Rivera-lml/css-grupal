@@ -19,11 +19,19 @@ html {
     /*Esto hace que el padding no afecte a las medidas del width, llevarlo siempre*/
     box-sizing: inherit;
 }
-body {
+body.home {
     font-family: var(--fuentePrimaria);
     font-size: 1.6rem;
     line-height: 1.6;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    min-height: 100%;
+}
+
+body.nohome {
+    font-family: var(--fuentePrimaria);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: white;
     min-height: 100%;
 }
 
@@ -337,4 +345,104 @@ word-break: normal;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 6rem;
     text-align: justify;
+}
+
+/*Nosotros*/
+
+
+.AN{
+    font-size: 5rem;
+    margin: 4rem 0;
+}
+
+.contenido-nosotros img{
+    max-height: 50rem;
+}
+
+.contenido-nosotros{
+    display: grid/*Grid es como flex*/;
+    grid-template-columns: Repeat(2, 1fr)/*Si le voy a asignar el mismo espacio a todo uso repeat(#deVecesRepetir, #EspacioAginado)*/;
+    /*contenido-nosotros es el padre de 2 divs, entonces con grid-template-columns le doy a esos dos divs un cierto porcentaje de espacio de anchura para cada uno de los divs o (Le doy tantas fracciones[fr] del espacio total a cada columna, hay dos divs asi que si le doy 1 fr a cada una le doy la mitad del espacio total a ambas)*/
+    grid-column-gap: 2rem; /*Con grid puedo hacer la separacion de columnas con "grid-column-gap"*/
+}
+
+.texto-historia h4{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0; 
+    text-align: center;
+}
+
+.texto-historia p{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem 0 1rem 0; 
+    text-align: justify;
+}
+
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    margin: 3rem 0;
+}
+
+.nosotros svg{
+    font-size: 6rem;
+    color: var(--secudanrioClaro);
+}
+
+.MV {
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .MV {
+        flex-basis: /*Se usa para cambiar el tamaño de la base del flex (es como waight, pero si trabajo con flex debo usar FLEX-BASIS)*/
+        calc(33.3% - 3rem);
+    }
+}
+
+.MV h3 {
+    margin: 0.5rem 0 3rem 0;
+    text-transform: uppercase;
+    /* para convetir a mayusculas */
+}
+
+.MV a{
+    text-decoration: none;
+}
+
+.MV ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: left;
+}
+.MV li{
+    justify-self: left;
+}
+
+.MV img{
+ width: 100px;
+ height: auto;
+}
+
+.MV:first-of-type img{
+    padding-top: 4.3rem;
+}
+
+.icono-valores{
+    grid-column: 1 / 4;
+}
+.valores {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    text-align: center;
+}
+
+.valores h3{
+    color: var(--terceroClaro);
 }

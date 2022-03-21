@@ -14,7 +14,7 @@
         <link rel="icon" href="logo.jpg" type="image/icon type" />
         
     </head>
-    <body class="home">
+    <body class="nohome">
       <div class="navbar">
         <div class="logo">
           <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="">
@@ -25,9 +25,6 @@
           <a href="nosotros.html">Nosotros</a>
           <a href="contacto.html">Contacto</a>
         </div>
-      </div>
-      <div class="site-header"> 
-        
       </div>
       {% block contents %}
       {% endblock %}
