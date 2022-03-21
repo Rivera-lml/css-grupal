@@ -4,22 +4,91 @@
 
   <section class="contenedor titulo-home">
   </section>
-
-  <main class="contenedor">
-    <h1 class="centrado">Propiedades</h1>
+  <h1 class="centrado">Propiedades</h1>
+  <main class="contenedor mega-flex">
+    
     <!--Code para filtro de busqueda-->
-    <section class="filtro contenedor">
-      <p>Aqui irá el filtro de busqueda</p>
+    <section class="filtro-cat">
+      <p class="centrado">Casa</p>
+      <p class="centrado">Apartamento</p>
+      <p class="centrado">Rancho</p>
+    </section>
+    <section class="filtros">
+      <h3 class="centrado">Filtrar</h3>
+      <div class="selectdiv">
+        <label>
+            <select>
+                <option selected> Operación</option>
+                <option value="Alquiler">Alquiler</option>
+                <option value="Venta">Venta</option>
+            </select>
+        </label>
+      </div>
+      
+      <div class="selectdiv">
+        <label>
+            <select>
+                <option selected> Seguridad</option>
+                <option value="Privada">Privada</option>
+                <option value="Calle principa">Calle principal</option>
+                <option value="Colonia">Colonia</option>
+            </select>
+        </label>
+      </div>
+
+      <div class="selectdiv">
+        <label>
+            <select>
+                <option selected> Baños</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </label>
+      </div>
+
+      <div class="selectdiv">
+        <label>
+            <select>
+                <option selected> Dormitorios</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </label>
+      </div>
+
+      <div class="selectdiv">
+        <label>
+            <select>
+                <option selected> Estacionamientos</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </label>
+      </div>
+
     </section>
     <div class="ejemplos">
       <!--Ejemplo 1-->
       <div class="ejemplo">
         <div class="ejemplo-imagen" style="background-image: url(static/images/ej.jpg); background-size: cover; background-position: center;">
           <!--<img src="{{ url_for('static', filename='images/ej.jpg') }}" alt="">-->
+          <h3 class="precio">$600,000 - Venta </h3>
         </div>
         <div class="ejemplo-contenido">
           <h3>Casa en Cumbres de Cuscatlán</h3>
-          <p class="precio">$600,000 (negociable)</p>
+          
               <!--<p class="texto-ejemplos">
                 Se vende casa en Cumbres de Cuscatlán ,privado con seguridad las 24 horas,dos plantas,
                 terreno de 644 v2,400mtrs de construcción.
@@ -47,10 +116,47 @@
       <div class="ejemplo">
         <div class="ejemplo-imagen" style="background-image: url(static/images/ej.jpg); background-size: cover; background-position: center;">
           <!--<img src="{{ url_for('static', filename='images/ej.jpg') }}" alt="">-->
+          <h3 class="precio">$600,000 - Venta </h3>
         </div>
         <div class="ejemplo-contenido">
           <h3>Casa en Cumbres de Cuscatlán</h3>
-          <p class="precio">$600,000 (negociable)</p>
+          
+              <!--<p class="texto-ejemplos">
+                Se vende casa en Cumbres de Cuscatlán ,privado con seguridad las 24 horas,dos plantas,
+                terreno de 644 v2,400mtrs de construcción.
+              </p>-->
+          <ul class="iconos">
+            <li class="centrado icono">
+              <i class="fa-solid fa-bed"></i>
+              <p>5</p>
+            </li>
+            <li class="centrado icono">
+              <i class="fa-solid fa-toilet"></i>
+              <p>7</p>
+            </li>
+            <li class="centrado icono">
+              <i class="fa-solid fa-car"></i>
+              <p>3</p>
+            </li>
+            <li class="centrado icono">
+              <i class="fa-solid fa-ruler-combined"></i>
+              <p>3</p>
+            </li>
+          </ul>
+          <div class="centrado"> 
+            <a href="ejemplo1.html" class="boton boton-morado">Ver</a>
+          </div>
+        </div>
+      </div>
+      <!--Ejemplo 3-->
+      <div class="ejemplo">
+        <div class="ejemplo-imagen" style="background-image: url(static/images/ej.jpg); background-size: cover; background-position: center;">
+          <!--<img src="{{ url_for('static', filename='images/ej.jpg') }}" alt="">-->
+          <h3 class="precio">$600,000 - Venta </h3>
+        </div>
+        <div class="ejemplo-contenido">
+          <h3>Casa en Cumbres de Cuscatlán</h3>
+          
               <!--<p class="texto-ejemplos">
                 Se vende casa en Cumbres de Cuscatlán ,privado con seguridad las 24 horas,dos plantas,
                 terreno de 644 v2,400mtrs de construcción.
@@ -74,14 +180,15 @@
           </div>
         </div>
       </div>
-      <!--Ejemplo 3-->
+      <!--Ejemplo 4-->
       <div class="ejemplo">
         <div class="ejemplo-imagen" style="background-image: url(static/images/ej.jpg); background-size: cover; background-position: center;">
           <!--<img src="{{ url_for('static', filename='images/ej.jpg') }}" alt="">-->
+          <h3 class="precio">$600,000 - Venta </h3>
         </div>
         <div class="ejemplo-contenido">
           <h3>Casa en Cumbres de Cuscatlán</h3>
-          <p class="precio">$600,000 (negociable)</p>
+          
               <!--<p class="texto-ejemplos">
                 Se vende casa en Cumbres de Cuscatlán ,privado con seguridad las 24 horas,dos plantas,
                 terreno de 644 v2,400mtrs de construcción.

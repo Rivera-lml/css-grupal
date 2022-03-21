@@ -34,7 +34,7 @@ img {
 }
 
 .contenedor {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -94,7 +94,7 @@ a{
     font-weight: 400;
     text-decoration: none;
     font-size: 1.8rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
     display: inline-block;
     text-align: center;
     display: block;
@@ -165,20 +165,128 @@ a{
     font-size: 1.8rem;
 }
 
+/*Main*/
+.mega-flex{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.filtro-cat{
+    border-radius: 1rem;
+    width: 100%;
+    height: 5rem;
+    grid-column: 1 / 4 ;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
+}
+
+.filtro-cat p{
+    width: 100%;
+    align-items: center;
+    color: var(--secudanrioClaro);
+    border-right: 1px solid var(--terceroClaro) ;
+}
+
+.filtro-cat p:hover{
+    cursor: pointer;
+}
+
+.filtro-cat p:last-child{
+    border-right: 0px solid var(--terceroClaro) ;
+}
+
+.filtros{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
+}
+
+.filtros h3{
+    border-bottom: 1px solid #333;
+    margin-bottom: 1rem;
+}
+
+/*------------Select Box-----------------*/
+
+.selectdiv{
+    width: 90%;
+    margin: 0 auto;
+}
+  /* IE11 hide native button (thanks Matt!) */
+  select::-ms-expand {
+  display: none;
+  }
+  
+  .selectdiv:after {
+    content: '<>';
+    font: 17px var(--fuentePrimaria);
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    /*Adjust for position however you want*/
+    
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    /*left line */
+    
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 40px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+  }
+/*-----------------End Select Box----------------*/
+
 /*Ejemplos*/
 .ejemplos{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 6rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
 }
 
 .ejemplo{
     width: 100%;
     display: grid;
-    grid-template-rows: 1.5fr 0.75fr;
+    grid-template-rows: 1fr 0.75fr;
     border-radius: 1rem;
     background-color: white;
-    border: 1px solid var(--secundario);
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
     -moz-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
     box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
@@ -186,6 +294,18 @@ a{
 
 .ejemplo .ejemplo-imagen{
     border-radius: 1rem 1rem 0 0;
+    position: relative;
+}
+
+.ejemplo .ejemplo-imagen h3{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 0.8rem;
+}
+
+.ejemplo .ejemplo-contenido h3{
+    padding: 0.5rem;
 }
 
 .ejemplo p{
@@ -194,7 +314,7 @@ a{
 
 .iconos{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 1.6rem 0 0 0;
 }
 
