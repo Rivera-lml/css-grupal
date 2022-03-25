@@ -42,19 +42,19 @@ img {
 }
 
 .contenedor {
-    width: 95%;
+    width: 100%;
     margin: auto;
     
 }
 
 /* sobre nosostros */
 
-.contenedor{
+.contenido-nosotros{
     background: #f2f2f2;
     padding: 0px 0px 30px 15px;
 }
 
-.contenedor{
+.contenido-nosotros{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -67,18 +67,18 @@ margin-right: 30px;
 
 /* más sobre nosotros */
 .contenedor-seccion{
-    width: 95%;
+    width: 100%;
     margin: auto;
     background: #f2f2f2;
-    padding: 0px 0px 30px 15px;
+    /* padding: 0px 0px 30px 15px; */
 }
 
-.contenedor-seccion{
+/* .contenedor-seccion{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-}
+} */
 
 /* footer*/
 
@@ -91,7 +91,7 @@ margin-right: 30px;
 .contenedor-footer{
 
     display: flex;
-    width: 95%;
+    width: 100%;
     justify-content: space-evenly;
     margin: auto;
 
@@ -212,7 +212,7 @@ a{
     /* Para que tome el tamaño de la pantalla del usuario*/
     background-image: url(../images/hero2.jpg);
     background-position: center;
-    /* background-size: cover; */
+    background-size: cover;
 
     width: 100%;
    
