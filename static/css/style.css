@@ -249,7 +249,6 @@ a{
     font-size: 1.8rem;
 }
 
-<<<<<<< HEAD
 /*Footer*/
 .contenedor-footer{
     background-color: #353535;
@@ -286,24 +285,7 @@ a{
     margin: 2rem 0 0 0;
     font-size: 1.5rem;
 }
-=======
-.navbar .nav{
-    text-align: right;
-    
-}
 
-.navbar .nav > a{
-    color: #333366;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
-
-}
-
-.navbar .nav > a:hover{
-    text-decoration: underline;
-    }
->>>>>>> e972a01a747b6e5db5b4b74c770b6fd640191984
 
 /*Main*/
 .mega-flex{
