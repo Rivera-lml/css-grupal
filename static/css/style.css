@@ -403,7 +403,7 @@ word-break: normal;
     grid-row-gap: 2rem;
 }
 
-.ejemplo{
+.ejemplo1{
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 0.75fr;
@@ -446,6 +446,106 @@ word-break: normal;
 .icono p{
     color: black;
 }
+
+/* Ejemplo 1 */
+
+
+
+.AN{
+    font-size: 5rem;
+    margin: 4rem 0;
+}
+
+.primer-ejemplo {
+    background-color: #cccccc;
+    
+}
+
+.primer-ejemplo .imagenes-casa{
+    text-align-last: center;
+}
+
+.primer-ejemplo .resumen-propiedad{
+    text-align-last: center;
+}
+
+.primer-ejemplo .imagen-casa{
+    text-align-last: center;
+}
+
+.primer-ejemplo img{
+    max-height: 50rem;
+    align-content: center ;
+}
+
+.primer-ejemplo .contenedor-descripcion{
+    display: grid;
+    grid-template-columns: Repeat(2, 1fr);
+    grid-column-gap: 2rem; 
+}
+
+.primer-ejemplo .texto-descripcion h3{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0; 
+    text-align: center;
+}
+
+
+.primer-ejemplo .texto-descripcion h4{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0; 
+    text-align: center;
+}
+
+.primer-ejemplo .texto-descripcion p{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem 0 1rem 0; 
+    text-align: justify;
+}
+
+ .primer-ejemplo .texto-descripcion2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    margin: 3rem 0;
+    margin-left: auto;
+}
+
+.primer-ejemplo .texto-descripcion-foto2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    margin: 3rem 0;
+    margin-left: 0;
+}
+
+
+
+
+
+.primer-ejemplo .imgplanta1{
+    text-align-last: center;
+}
+
+.primer-ejemplo .imgplanta1{
+    max-height: 50rem;
+    align-content: center ;
+}
+
+.primer-ejemplo .foto1{
+    text-align: left;
+}
+
+.primer-ejemplo .foto2{
+    text-align: left;
+}
+
+
 
 /*Testimonios*/
 

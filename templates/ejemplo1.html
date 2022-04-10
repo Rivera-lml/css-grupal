@@ -2,41 +2,75 @@
 {% block title %}Ejemplo{% endblock %}
 {% block contents %}
 
-<!--Imagen del ejemplo-->
-  <h1 class="imagen-casa">Casa en Cumbres de Cuscatlán</h1> <!--#esto varia con el extend-->
-  <section class="contenedor-imagenes">
-    <div class="imagenes-casa">
-      <img src="###" alt="Imagen casa" />
-    </div>
 
-<!--Code de resumen de propiedad-->
-    <main class="contenedor-descripción">
-      <div class="resumen-propiedad">
-        <p class="precio">Precio: $6,000,000</p>
-      </div>
+<head>
+  <link rel="stylesheet" href= "{{url_for('static', filename='css/style.css')}}">
+</head>
 
-      <div class="texto-descripción">
-        <h3>Descripción</h3>
-            <pre class="Texto descripción">
-                Planta 1:
-               - Baño social.
-               - Estudio con baño.
-               - Sala principal.
-               - Comedor.
-               - Área de cocina con pantry.
-               - Área de servicio completa con habitación adicional para personal de seguridad, motorista ó jardinero que incluye baño completo.
-               - Área de bar con baño.
-               - Sótano.
-               - Jardín amplio.
-               - Dormitorio adicional en el área
-               Planta 2:
-               - Habitación principal con walk in closet, jacuzzi, baño ducha y doble lavamanos.
-               - 3 habitaciones junior con walk in closet y baño cada una.
-               - Amplia sala familiar.
-               - Dos accesos a la segunda planta; acceso principal y acceso al jardín, el que puede servir como salida de emergencia.
+<body>
+  <div class="primer-ejemplo">
+    <!--Imagen del ejemplo-->
+    <h1 class="imagen-casa">Casa en Cumbres de Cuscatlán</h1> <!--#esto varia con el extend-->
+    <section class="contenedor-imagenes">
+      <!-- <div class="imagenes-casa">
+        <img src="{{ url_for('static', filename='images/ej.jpg') }}" alt="Casa 1" width="200", heigth= "200">
+      </div> -->
+
+  <!--Code de resumen de propiedad-->
+      <main class="contenedor-descripción">
+        <div class="resumen-propiedad">
+          <p class="precio">Precio: $6,000,000</p>
+        </div>
+
+        <div class="texto-descripcion">
+          <h3>Descripción</h3>
+              <pre class="texto-descripcion2">
+                <h4>Planta 1:</h4> 
+                <p>
+                  <div class="foto1">
+                    <img src="static/images/ej1planta1.jpeg" alt="planta 1" width="100" height="100">
+                  </div>
+                </p>
+                <!-- <div class="imgplanta1">
+                   <img src="{{ url_for('static', filename='images/ej1planta1.jpeg') }}" alt="Planta 1" width="200", heigth= "100">
+                </div> -->
+                - Baño social.
+                - Estudio con baño.
+                - Sala principal.
+                - Comedor.
+                - Área de cocina con pantry.
+                - Área de servicio completa con habitación adicional para personal de seguridad,
+                   motorista ó jardinero que incluye baño completo.
+                - Área de bar con baño.
+                - Sótano.
+                - Jardín amplio.
+                - Dormitorio adicional en el área
+                
+                <p>
+                   <h4>Planta 2:</h4>
+                </p>
+              
+                <p>
+                  
+                  <img src="static/images/ej1planta2.jpeg" alt="planta 2" width="100" height="100">
+                  
+                </p>
+                 <!-- <div class="imgplanta2"></div>
+                  <img src="{{ url_for('static', filename='images/ej1planta2.jpeg') }}" alt="Planta 2" width="200", heigth= "200">
+                 </div> -->
+            <div class="parrafo2">
+              - Habitación principal con walk in closet, jacuzzi, baño ducha y doble lavamanos.
+              - 3 habitaciones junior con walk in closet y baño cada una.
+              - Amplia sala familiar.
+              - Dos accesos a la segunda planta; acceso principal y acceso al jardín, el que puede servir como salida de emergencia.
+            </div>
+                    
             </pre>
-      </div>
-    </main>
-  </section>
+        </div>
+      </main>
+    </section>
+</div>
+</body>
+
 {% endblock %}
 
