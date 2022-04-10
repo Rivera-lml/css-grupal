@@ -2,12 +2,74 @@
 {% block title %}Ejemplo{% endblock %}
 {% block contents %}
 
+<div style=" background-image: url(static/images/ej.jpg)" class="img-inmueble">
 
-<head>
-  <link rel="stylesheet" href= "{{url_for('static', filename='css/style.css')}}">
-</head>
+</div>
+<h1 class="centrado">Casa en Cumbres de Cuscatlán</h1>
 
-<body>
+<div class="contenedor detalles">
+  <div class="resumen-propiedad cuadro">
+    <h3>Descripción de la propiedad</h3>
+      <p>
+        Planta 1:
+        <br>
+        - Baño social.
+        <br>
+        - Estudio con baño.
+        <br>
+        - Sala principal.
+        <br>
+        - Comedor.
+        <br>
+        - Área de cocina con pantry.
+        <br>
+        - Área de servicio completa con habitación adicional para personal de seguridad,
+            motorista ó jardinero que incluye baño completo.
+        <br>
+            - Área de bar con baño.
+        <br>
+        - Sótano.
+        <br>
+        - Jardín amplio.
+        <br>
+        - Dormitorio adicional en el área
+        <br>
+        Planta 2:
+        <br>
+        - Habitación principal con walk in closet, jacuzzi, baño ducha y doble lavamanos.
+        <br>
+            - 3 habitaciones junior con walk in closet y baño cada una.
+        <br>
+        - Amplia sala familiar.
+        <br>
+        - Dos accesos a la segunda planta; acceso principal y acceso al jardín, el que puede servir como salida de emergencia.
+      </p>
+    
+  </div>
+  <div class="precio cuadro">
+    <p>Alquila</p>
+    <p class="precio-p">Precio: $6,000,000</p>
+  </div>
+  <div class="fecha cuadro">
+
+  </div>
+</div>
+  <h1 class="centrado">Album de fotos</h1>
+  <div class="seccion contenedor no-100">
+    <h2>Galería de fotos</h2>
+    <div class="galeria">
+        <a href="img/galeria/01.jpg" data-lightbox="galeria">
+            <img src="static/images/ej1planta1.jpeg" alt="Imagen 1">
+        </a>
+        <a href="img/galeria/02.jpg" data-lightbox="galeria">
+            <img src="static/images/ej1planta2.jpeg" alt="Imagen 2">
+        </a>
+        <a href="img/galeria/03.jpg" data-lightbox="galeria">
+            <img src="static/images/ej.jpg" alt="Imagen 3">
+        </a>
+    </div>
+</div>
+
   <div class="primer-ejemplo">
     <!--Imagen del ejemplo-->
     <h1 class="imagen-casa">Casa en Cumbres de Cuscatlán</h1> <!--#esto varia con el extend-->
@@ -70,7 +132,6 @@
       </main>
     </section>
 </div>
-</body>
 
 {% endblock %}
 
