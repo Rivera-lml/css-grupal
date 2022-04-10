@@ -256,6 +256,11 @@ a{
 .navbar .nav a{
     color: var(--primario);
     font-size: 1.8rem;
+    transition: all .1s ease;
+}
+
+.navbar .nav a:hover{
+    border-bottom: 5px solid var(--secundario);
 }
 
 /*Footer*/
@@ -577,9 +582,23 @@ word-break: normal;
     line-height: 1.5;
 }
 
+.galeria{
+    display: flex;
+    place-content: center;
+}
+
 .galeria a{
     display: inline-block;
     margin-bottom: 0.5rem;
+    margin: 0 3% 0 0;
+}
+
+.precio{
+    text-align: center;
+    padding: 20% 0 0 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secundario);
 }
 
 .AN{
