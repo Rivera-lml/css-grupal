@@ -388,18 +388,19 @@ header .textos-header {
     box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.65);
 }
 
-.filtro-cat p{
+.filtro-cat a{
     width: 100%;
     align-items: center;
     color: black;
     border-right: 1px solid var(--secundario) ;
+    position: relative;
 }
 
-.filtro-cat p:hover{
+.filtro-cat a:hover{
     cursor: pointer;
 }
 
-.filtro-cat p:last-child{
+.filtro-cat a:last-child{
     border-right: 0px solid var(--secundario) ;
 }
 
@@ -417,6 +418,21 @@ header .textos-header {
     border-bottom: 1px solid #333;
     margin-bottom: 1rem;
     color: var(--secundario);
+}
+
+a.activo::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 2rem;
+    width: 3rem;
+    bottom: -2rem;
+    background-image: url(../images/talleres-flecha.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    
 }
 
 /*------------Select Box-----------------*/
@@ -474,6 +490,10 @@ word-break: normal;
 /*-----------------End Select Box----------------*/
 
 /*Ejemplos*/
+.ocultar{
+    display: none!important;
+}
+
 .ejemplos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -482,6 +502,9 @@ word-break: normal;
     background-color: #ebebeb;
     padding: 1rem;
     border-radius: 1rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 400px;
 }
 
 .ejemplo{
@@ -527,6 +550,8 @@ word-break: normal;
 .icono p{
     color: black;
 }
+
+
 
 /*Parallax*/
 
