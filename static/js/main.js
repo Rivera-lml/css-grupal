@@ -41,11 +41,16 @@
       //programa de conferencias
       $('.filtro-cat a:first').addClass('activo');
       $('#apartamento').addClass('ocultar')
+      $('#rancho').addClass('ocultar')
       $('.filtro-cat a').on('click', function(){
         $('.filtro-cat a').removeClass('activo');
+        $('#apartamento').addClass('ocultar')
+        $('#casa').addClass('ocultar')
+        $('#rancho').addClass('ocultar')
         $(this).addClass('activo');
         $('.ocultar').hide();
         let enlace = $(this).attr('href');
+        $(enlace).removeClass('ocultar');
         $(enlace).fadeIn(1000);
         return false; 
     });
